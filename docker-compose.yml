@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: game_management_app
-    image: game_management_app_image
+    container_name: video_game_management_app
+    image: video_game_management_app_image
     ports:
       - "8000:8000"
     volumes:
@@ -19,10 +19,10 @@ services:
     image: mysql:8.0.41
     container_name: games_db
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_USER: ${DB_USERNAME}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: game_db
+      MYSQL_USER: regularuser
+      MYSQL_PASSWORD: regularpassword
     ports:
       - "3307:3306"
     volumes:
