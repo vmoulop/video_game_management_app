@@ -32,10 +32,15 @@ cp .env.example .env
 Next, configure your database connection in the .env file, e.g.
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=video_game_db
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 Make sure to adjust the DB_DATABASE, DB_USERNAME, and DB_PASSWORD to reflect your actual MySQL setup.
@@ -73,12 +78,21 @@ By default, the application will be accessible at http://127.0.0.1:8000.
 API Endpoints
 
 POST /api/register : Create a new user
+
 POST /api/login : Log in and obtain an authentication token
+
 GET /api/games : Get a list of video games
+
 POST /api/games/{game ID} : View a single video game
+
 POST /api/games : Add a new video game (authentication required)
+
 PUT /api/games/{id} : Edit an existing video game (authentication required)
+
 GET /api/dashboardview : User's game dashboard (view format)
+
 GET /api/dashboardjson : User's game dashboard (json format)
+
 DELETE /api/games/{id} : Delete a game (authentication required. Only Admin User can delete video games of other users)
+
 POST /api/games/review/{id} : Create a new rating and review for existing video game
