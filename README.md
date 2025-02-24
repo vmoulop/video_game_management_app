@@ -8,7 +8,7 @@ PHP : 8.1.31
 
 Composer : 2.6.0
 
-Laravel - 10.48.28
+Laravel : 10.48.28
 
 MySQL : 8.0.41
 
