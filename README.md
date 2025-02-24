@@ -5,8 +5,11 @@ Users Roles : Admin, Regular (Default)
 Versions Used for the implementation (Prerequisites)
 
 PHP : 8.1.31
+
 Composer : 2.6.0
+
 Laravel - 10.48.28
+
 MySQL : 8.0.41
 
 Installation Guide (the commands below should be executed in bash terminal)
